@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程讲解视频</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 12px;
+            font-size: 26px;
+        }
+        .desc {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        /* 视频容器，保持16:9比例 */
+        .video-box {
+            width: 100%;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        video {
+            width: 100%;
+            display: block;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 课程标题 -->
+        <h1>XX课程完整讲解</h1>
+        <!-- 课程简介 -->
+        <p class="desc">本视频为课程配套讲解，完整梳理知识点与实操步骤</p>
+
+        <!-- 视频区域 -->
+        <div class="video-box">
+            <!-- 修改src为你的视频路径 -->
+            <video controls autoplay muted preload="auto">
+                <source src="你的视频地址.mp4" type="video/mp4">
+                你的浏览器不支持视频播放，请更换浏览器打开
+            </video>
+        </div>
+
+        <div class="footer">
+            课程讲解专用页面
+        </div>
+    </div>
+</body>
+</html>
